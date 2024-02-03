@@ -166,6 +166,7 @@ class IdeaGen(models.Model):
 class ChatGPT(models.Model):
     teamName = models.CharField(max_length = 64, unique = True)
     teamLeadName = models.CharField(max_length = 64)
+    team_Lead_Email = models.EmailField(unique=True,default='None')
     teamLeadStudentID = models.CharField(max_length=8, validators=[RegexValidator(regex='^[0-9]{8}$')], unique = True)
     team_Lead_Phone = models.CharField(max_length=11, validators=[RegexValidator(regex='^[0-9]{11}$')], default='', blank=True)
     transactionID = models.CharField(max_length=64, unique=False, default='None')

@@ -94,12 +94,12 @@ form label {
 
 /* Add this style for input color */
 form input {
-    color: antiquewhite;
+    color: rgb(0, 0, 0);
 }
 
 /* Add this style for textarea color */
 form textarea {
-    color: antiquewhite;
+    color: rgb(0, 0, 0);
 }
 
 /* Add this style for select color */

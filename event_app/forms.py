@@ -56,6 +56,7 @@ class ChatGPTForm(forms.ModelForm):
             'teamName': forms.TextInput(attrs={'class': 'custom-input'}),
             'teamLeadName': forms.TextInput(attrs={'class': 'custom-input'}),
             'teamLeadStudentID': forms.TextInput(attrs={'class': 'custom-input'}),
+            'team_Lead_Email': forms.TextInput(attrs={'class': 'custom-input'}),
             'transactionID': forms.TextInput(attrs={'class': 'custom-input'}),
             'team_Lead_Phone': forms.TextInput(attrs={'class': 'custom-input'}),
             # Add other fields with custom class as needed

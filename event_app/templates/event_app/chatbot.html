@@ -64,7 +64,15 @@
                     color: black;
                 }
             </style>
-    
+            {% if messages %}
+            <div class="messages">
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+            {% endif %}
             <form method="post">
                 {% csrf_token %}
                 
@@ -77,7 +85,12 @@
                     <label for="{{ form.teamLeadName.id_for_label }}">Student Name:</label>
                     {{ form.teamLeadName }}
                 </div>
-            
+
+                <div class="form-group">
+                    <label for="{{ form.team_Lead_Email.id_for_label }}">Team Lead Email:</label>
+                    {{ form.team_Lead_Email }}
+                </div>
+                
                 <div class="form-group">
                     <label for="{{ form.teamLeadStudentID.id_for_label }}">Student ID:</label>
                     {{ form.teamLeadStudentID }}
@@ -92,6 +105,7 @@
                     <label for="{{ form.team_Lead_Phone.id_for_label }}"> Phone:</label>
                     {{ form.team_Lead_Phone }}
                 </div>
+                
             
                 <button type="submit">Submit</button>
             </form>
