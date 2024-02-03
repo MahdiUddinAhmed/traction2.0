@@ -10,13 +10,18 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    width: auto;
+    height: 100%;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 h1 {

@@ -28,9 +28,9 @@ body {
     color: bisque;
 }
 
-.card img {
+card img {
     width: 30%;
-    height: 150px;
+    height: auto;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 50px;
