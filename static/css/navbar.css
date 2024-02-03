@@ -82,3 +82,29 @@ body, h1, h2, p, ul, li {
     background-color: rgb(136, 255, 1);
     animation: None;
 }
+@media (max-width: 768px) {
+    .navbar {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+    .logo img {
+        align-items: center;
+        justify-content: center;
+        width: 150px; /* Adjust the width for smaller screens */
+        height: 50px;
+    }
+    .button {
+        display: block; /* Show the Register button in mobile mode */
+        margin-top: 10px;
+    }
+}

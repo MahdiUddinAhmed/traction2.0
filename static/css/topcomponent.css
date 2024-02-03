@@ -80,7 +80,7 @@ body, html {
 
 .pimg1 {
   background-image: url('../img/J4o.gif');
-  min-height: 100vh;
+  min-height: 100%;
   background-repeat: repeat-x;
   animation: tilesetAnimation 1000s linear infinite;
 }
@@ -161,19 +161,18 @@ body, html {
     background-attachment: scroll;
   }
 
-  .rotating-image-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1; /* Make sure the rotating image is behind the other elements */
-  }
-
   .rotating-image-container img {
-    width: 150vmin; /* Use vmin to make the image responsive based on the viewport size */
+    max-width: 100%;
     height: auto;
     animation: rotateImage 10s linear infinite;
-  }
+}
+
+.rotating-image-container2 img {
+    max-width: 100%;
+    height: auto;
+    animation: rotateImage2 10s linear infinite;
+}
+
 
   .ptext {
     position: absolute;
@@ -190,18 +189,23 @@ body, html {
 
 .contact-icons {
   margin-top: 20px;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .icon {
-  font-size: 24px;
+  font-size: 12px;
   margin: 0 10px;
   color: #fff; /* Adjust the color as needed */
   text-decoration: none;
 }
 
+.iconcontainer{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 .credit {
   background-color: #333333;
@@ -214,31 +218,52 @@ body, html {
   color: #fff;
 }
 
-@media (max-width: 568px) {
-  .pimg1, .pimg2, .pimg3 {
-    background-attachment: scroll;
-  }
-
-  /* Other mobile styles */
-}
-/* Add the following media query to your existing CSS file */
-/* Add the following media query to your existing CSS file */
-@media (max-width: 568px) {
-  #light-section-image {
-    width: 50%; /* Adjust the width as per your preference */
-    height: auto; /* Maintain the aspect ratio */
-  }
-}
 
 .sponsorimage{
-  width:20px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  background-color:  #333333;
-  color: #ffffff;
   align-items: center;
   justify-content: center;
 }
 
+@media only screen and  (max-width: 720px) {
+  #light-section-image {
+    width: 50%; /* Adjust the width as per your preference */
+    height: auto; /* Maintain the aspect ratio */
+  }
+  .pimg1, .pimg2, .pimg3 {
+      background-attachment: scroll;
+      background-size: cover;
+  }
+
+  .section-dark {
+    display: block;
+  }
+  .contact-icons{
+    display: block;
+  }
+  .iconcontainer{
+    display: block;
+  }
+
+  .rotating-image-container img,
+  .rotating-image-container2 img,
+  .sponsorimage img {
+      max-width: 100%;
+      height: auto;
+  }
+  .container {
+    /* Adjust styles for smaller screens */
+    padding: 10px;
 }
+img {
+  width: 100%;
+}
+}
+
+
+.sponsorimage img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
