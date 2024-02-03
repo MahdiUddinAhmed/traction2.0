@@ -20,6 +20,8 @@ body, h1, h2, p, ul, li {
 .logo img {
     width: 200px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
+    align-items: center;
+    justify-content: center;
 }
 
 /* Style for the navigation links */
@@ -77,7 +79,10 @@ body, h1, h2, p, ul, li {
     }
 }
 
-
+.logo{
+    align-items: center;
+    justify-content: center;
+}
 /* Add hover effect for the Register button */
 .button:hover {
     background-color: rgb(136, 255, 1);
@@ -86,6 +91,8 @@ body, h1, h2, p, ul, li {
 @media (max-width: 768px) {
     .navbar{
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .nav-links {
@@ -108,4 +115,5 @@ body, h1, h2, p, ul, li {
         display: block; /* Show the Register button in mobile mode */
         margin-top: 10px;
     }
+
 }
