@@ -229,3 +229,16 @@ body, html {
     height: auto; /* Maintain the aspect ratio */
   }
 }
+
+.sponsorimage{
+  width:20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color:  #333333;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+}
+
+}
