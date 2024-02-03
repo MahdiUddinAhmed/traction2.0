@@ -156,7 +156,7 @@ body, html {
   margin: 12px 0;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 800px) {
   .pimg1, .pimg2, .pimg3 {
     background-attachment: scroll;
   }
@@ -179,7 +179,7 @@ body, html {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #000;
+    color: #efff12;
     font-size: 27px;
     letter-spacing: 8px;
     text-transform: uppercase;
@@ -224,7 +224,7 @@ body, html {
   justify-content: center;
 }
 
-@media only screen and  (max-width: 720px) {
+@media only screen and  (max-width: 768px) {
   #light-section-image {
     width: 50%; /* Adjust the width as per your preference */
     height: auto; /* Maintain the aspect ratio */

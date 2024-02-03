@@ -48,7 +48,7 @@ body {
 }
 
 /* Media query for mobile responsiveness */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     body {
         flex-direction: column;
     }

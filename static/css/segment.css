@@ -71,7 +71,7 @@
 /* Add the following media query to your existing CSS file */
 /* Add the following media query to your existing CSS file */
 /* Add the following media query to your existing CSS file */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 800px) {
   .segment_box_main {
     flex-direction: column; /* Change to column to stack segment boxes vertically in mobile mode */
   }
@@ -90,7 +90,3 @@ input {
   margin-bottom: 10px; /* Add margin to separate input boxes */
 }
 
-/* Additional styles for specific input types if needed */
-input[type="text"], input[type="password"] {
-  /* Add specific styles for text and password inputs if needed */
-}

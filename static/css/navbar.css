@@ -88,7 +88,7 @@ body, h1, h2, p, ul, li {
     background-color: rgb(136, 255, 1);
     animation: None;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .navbar{
         flex-direction: column;
         align-items: center;
