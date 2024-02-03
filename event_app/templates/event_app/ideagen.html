@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idea-gen Registration</title>
+    <link rel="stylesheet" href="{% static 'css/pj.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/topcomponent.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="{% url 'home' %}">
+            <div class="logo">
+                <img src="{% static 'img/logo.png' %}" alt="ROBU Logo">
+            </div>
+        </a>
+
+        <div class="nav-links">
+            <a href="#">About</a>
+            <a href="#">Segments</a>
+            <button class="button">Register</button>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>
+            Register for Idea-gen
+        </h1>
+        <p>
+            Think big, dream bigger! Join the Idea Competition and be the visionary the world needs. We're hunting for groundbreaking ideas that can reshape the future. Your brilliance could lead to a spot in the prestigious ROBU project. It's not just an idea; it's a revolution waiting to happen!
+        </p>
+                </p>
+            <p> Registration fee is 700 ( 710 if through Bkash) if team of 2 or 1000 (1010 if through Bkash ) if team of 3. How do you want to pay? 
+                Pay through any of the following:
+            </p>
+            <ul style="color: antiquewhite;">
+                <li>If Bkash</li>
+                <ul>
+                    <li>01857093392</li>
+                    <li>01631073242</li>
+                </ul  style="color: antiquewhite;">
+                <p>[add your team name in the reference]</p>
+                <p>Transaction Id:</p>
+                
+                <li>If Cash: (write their name in Transaction ID area )</li>
+                <ul>
+                    <li>Radia Tasnim Arony ( Executive of FnM) - 01857093392</li>
+                    <li>Nafisa Rahman (Executive of FnM) - 01631073242</li>
+                </ul>
+            </ul>
+        <!-- Clickable button linking to Google Drive -->
+        <p>
+            <a href="https://drive.google.com/drive/folders/1TYXLglRgt8_EM1VTyobIEDTIlZgBjNFd?usp=sharing" target="_blank">
+                <button class="driveLink">Rulebook</button>
+            </a>
+        </p>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="{{ form.team_Name.id_for_label }}">Team Name:</label>
+                {{ form.team_Name }}
+            </div>
+        
+            <div class="form-group">
+                <label for="{{ form.team_Lead_Name.id_for_label }}">Team Lead Name:</label>
+                {{ form.team_Lead_Name }}
+            </div>
+        
+            <div class="form-group">
+                <label for="{{ form.team_Lead_StudentID.id_for_label }}">Team Lead Student ID:</label>
+                {{ form.team_Lead_StudentID }}
+            </div>
+        
+            <div class="form-group">
+                <label for="{{ form.team_Lead_Email.id_for_label }}">Team Lead Email:</label>
+                {{ form.team_Lead_Email }}
+            </div>
+        
+            <div class="form-group">
+                <label for="{{ form.team_Lead_Phone.id_for_label }}">Team Lead Phone:</label>
+                {{ form.team_Lead_Phone }}
+            </div>
+        
+            <div class="form-group">
+                <label for="{{ form.team_Lead_FacebookID.id_for_label }}">Team Lead Facebook ID:</label>
+                {{ form.team_Lead_FacebookID }}
+            </div>
+        
+            <div class="form-group">
+                <label for="{{ form.member_2_name.id_for_label }}">Member 2 Name:</label>
+                {{ form.member_2_name }}
+            </div>
+        
+            <div class="form-group">
+                <label for="{{ form.member_2_StudentID.id_for_label }}">Member 2 Student ID:</label>
+                {{ form.member_2_StudentID }}
+            </div>
+            
+            <div class="form-group">
+                <label for="{{ form.member_3_name.id_for_label }}">Member 3 Name:</label>
+                {{ form.member_3_name }}
+            </div>
+        
+            <div class="form-group">
+                <label for="{{ form.member_3_StudentID.id_for_label }}">Member 3 Student ID:</label>
+                {{ form.member_3_StudentID }}
+            </div>
+            
+            <div class="form-group">
+                <label for="{{ form.member_3_Email.id_for_label }}">Member 3 Email:</label>
+                {{ form.member_3_Email }}
+            </div>
+
+        
+            <!-- Add other fields as needed -->
+        
+            <button type="submit">Submit</button>
+        </form>
+
+        <a href="{% url 'home' %}">
+            <button class="goBack">Go back to home</button>
+        </a>
+    </div>
+
+    <section class="section section-dark">
+        <h2>Contact Us</h2>
+        <div class="contact-icons">
+            <a href="https://www.facebook.com/BRACU.Robotics.Club" target="_blank" class="icon">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook
+            </a>
+            <a href="tel:+8801749298058" class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i>01749298058</a>
+            <a href="mailto:club.robu@g.bracu.ac.bd" class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>club.robu@g.bracu.ac.bd</a>
+            <a href="web-dev-team" class="icon"><i class="fa fa-user" aria-hidden="true"></i>Dev team</a>
+        </div>
+    </section>
+    <section>
+    <div class = "credit">
+        <p>
+            ROBU Copyright &copy; 2024 Traction 2.0 || All Rights reserved || Developed by ROBU WEB DEv team || All rights reserved by ROBU WEB DEV Team
+        </p>
+    </div>
+    </Section>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* segment.css */
+
+/* Styling for each segment box */
+/* segment.css */
+
+/* Styling for each segment box */
+.segment_container {
+  box-sizing: border-box;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Change to column to stack items vertically */
+  text-align: center; /* Center-align text within the container */
+  background:  #333;
+}
+
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 40px;
+  color: aliceblue;
+}
+
+
+
+.segment_box_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.segment_box {
+  margin-left: 30px;
+  justify-content: center;
+  border-radius: 20px;
+  border: 1px solid #00ffae;
+  background: linear-gradient(to bottom,  #333, #292828);
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out ; /* Adding a smooth transition effect */
+
+  /* On hover, apply a shake animation */
+  &:hover {
+      transform: translateY(-5px);
+  }
+}
+
+/* Styling for segment images */
+.segment-image {
+  width:140px;
+  height: 90px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Styling for segment titles */
+.segment-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 10px;
+  color:blanchedalmond
+  
+}
+
+/* Add the following media query to your existing CSS file */
+/* Add the following media query to your existing CSS file */
+/* Add the following media query to your existing CSS file */
+@media only screen and (max-width: 767px) {
+  .segment_box_main {
+    flex-direction: column; /* Change to column to stack segment boxes vertically in mobile mode */
+  }
+
+  .segment_box {
+    width: 100%; /* Make each box take 100% width in mobile mode */
+    margin: 0 0 20px 0; /* Adjusted margins for better spacing */
+  }
+}
+
+/* Add these styles for input elements in your CSS file */
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc; /* Add a border for better visibility */
+  margin-bottom: 10px; /* Add margin to separate input boxes */
+}
+
+/* Additional styles for specific input types if needed */
+input[type="text"], input[type="password"] {
+  /* Add specific styles for text and password inputs if needed */
+}

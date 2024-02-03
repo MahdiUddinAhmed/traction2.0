@@ -1,0 +1,58 @@
+/* static/css/web_dev_team.css */
+
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+.webcontainer{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* Style for web dev team cards */
+.web-dev-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    background-color: black;
+    color: blanchedalmond;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.web-dev-card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.web-dev-name {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* Style for social icons */
+.web-dev-social-icons {
+    margin-top: 20px;
+}
+
+.web-dev-social-icons a {
+    margin: 0 15px;
+    color: blanchedalmond;
+    font-size: 30px;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+    .web-dev-card {
+        width: 80%;
+    }
+}

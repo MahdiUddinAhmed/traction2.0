@@ -1,0 +1,102 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    color: bisque;
+}
+
+.segment {
+    background-color: #333;
+    padding: 20px;
+    width: 100%;
+    color: bisque;
+}
+
+.card {
+    max-width: 50%;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid #c0c28b;
+    background: linear-gradient(to bottom,  #333, #252525);
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out ; /* Adding a smooth transition effect */
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: bisque;
+}
+
+.card img {
+    width: 30%;
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+    color: bisque;
+}
+
+.card-content h2 {
+    color: bisque;
+}
+
+.card-content p {
+    color: bisque;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.buttons a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buttons a:nth-child(1) {
+    background-color: #4caf50;
+}
+
+.buttons a:nth-child(2) {
+    background-color: #4285f4;
+}
+.card:hover {
+    transform: scale(1.05); /* Make the card 5% larger on hover */
+    transition: transform 0.3s ease-in-out; /* Adding a smooth transition effect on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Enhance the shadow on hover */
+}
+
+.card:not(:hover) {
+    transform: scale(1); /* Reset the scale when not hovering */
+    transition: transform 0.3s ease-in-out; /* Adding a smooth transition effect when not hovering */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Reset the shadow when not hovering */
+}
+
+.card:hover img {
+    margin-right: 70px; /* Adjust the image margin on hover */
+}
+
+/* Floating effect */
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust the floating height */
+    }
+}
+
+.card {
+    animation: float 3s ease-in-out infinite; /* Apply the floating animation */
+}

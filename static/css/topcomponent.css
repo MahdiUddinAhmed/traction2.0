@@ -1,0 +1,231 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 3em;
+  color: #666;
+}
+
+.container {
+  position: relative;
+}
+
+.rotating-image-container {
+  margin-top: 30px;
+  opacity: 0.70;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Make sure the rotating image is behind the other elements */
+}
+
+.rotating-image-container2 {
+  margin-top: 30px;
+  opacity: 0.90;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2; /* Make sure the rotating image is behind the other elements */
+}
+
+
+.rotating-image-container img {
+  width: 90vmin; /* Use vmin to make the image responsive based on the viewport size */
+  height: auto;
+  animation: rotateImage 10s linear infinite;
+}
+
+.rotating-image-container2 img {
+  width: 50vmin; /* Use vmin to make the image responsive based on the viewport size */
+  height: auto;
+  animation: rotateImage2 10s linear infinite;
+}
+
+@keyframes rotateImage {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateImage2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.pimg1, .pimg2, .pimg3 {
+  position: relative;
+  opacity: 0.80;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -3;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment: fixed;
+}
+
+.pimg1 {
+  background-image: url('../img/J4o.gif');
+  min-height: 100vh;
+  background-repeat: repeat-x;
+  animation: tilesetAnimation 1000s linear infinite;
+}
+
+@keyframes tilesetAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2400px 0; /* Adjust the total width of your tileset */
+  }
+}
+
+.pimg2 {
+  background-image: url('../img/Aboutbg.jpg');
+  min-height: 400px;
+}
+
+.pimg3 {
+  background-image: url('../img/image3.jpg');
+}
+
+.section {
+  text-align: center;
+  padding: 80px 80px;
+  z-index: 3;
+
+}
+
+.section-light {
+  background-color:  #333333;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-dark {
+  background-color:  #333333;
+  color: #ddd;
+}
+
+.ptext {
+  margin-top: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffee00;
+  font-size: 25px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  text-align: center; /* Center the text horizontally */
+  z-index: 3;
+}
+
+.ptext .border {
+  color: #fff;
+  padding: 20px;
+}
+
+.ptext .border.trans {
+  background-color: transparent;
+}
+
+.btn {
+  width: 15%;
+  background: none;
+  border: 2px solid #4caf50;
+  color: white;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 12px 0;
+}
+
+@media (max-width: 568px) {
+  .pimg1, .pimg2, .pimg3 {
+    background-attachment: scroll;
+  }
+
+  .rotating-image-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Make sure the rotating image is behind the other elements */
+  }
+
+  .rotating-image-container img {
+    width: 150vmin; /* Use vmin to make the image responsive based on the viewport size */
+    height: auto;
+    animation: rotateImage 10s linear infinite;
+  }
+
+  .ptext {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    text-align: center; /* Center the text horizontally */
+  }
+}
+
+.contact-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #fff; /* Adjust the color as needed */
+  text-decoration: none;
+}
+
+
+.credit {
+  background-color: #333333;
+  text-align: center; /* Add this line to center the text horizontally */
+  padding: 20px 0; /* Add padding for better visual appearance */
+}
+
+.credit p {
+  margin: 0; /* Remove default margin to ensure text starts from the edge */
+  color: #fff;
+}
+
+@media (max-width: 568px) {
+  .pimg1, .pimg2, .pimg3 {
+    background-attachment: scroll;
+  }
+
+  /* Other mobile styles */
+}
+/* Add the following media query to your existing CSS file */
+/* Add the following media query to your existing CSS file */
+@media (max-width: 568px) {
+  #light-section-image {
+    width: 50%; /* Adjust the width as per your preference */
+    height: auto; /* Maintain the aspect ratio */
+  }
+}

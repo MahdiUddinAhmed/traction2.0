@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Add other head elements as needed -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/topcomponent.css' %}">
+    <link rel="stylesheet" href="{% static 'css/reg.css' %}">
+    <!-- Add other stylesheet links as needed -->
+    <!-- Add other script links as needed -->
+</head>
+
+
+<body>
+
+    <nav class="navbar">
+        <a href="{% url 'home' %}">
+            <div class="logo">
+                <img src="{% static 'img/logo.png' %}" alt="ROBU Logo">
+            </div>
+        </a>
+
+        <div class="nav-links">
+            <a href="#">About</a>
+            <a href="segments">Segments</a>
+            <a href="segments"><button class="button">Register</button></a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Registration Complete</h1>
+        <p>Your registration is complete. Once payment is verified, you will receive a confirmation email.</p>
+        <a href="{% url 'home' %}" class="btn-back">Go back to home</a>
+    </div>
+
+    <section class="section-dark">
+        <h2>Contact Us</h2>
+        <div class="contact-icons">
+            <a href="https://www.facebook.com/BRACU.Robotics.Club" target="_blank" class="icon">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook
+            </a>
+            <a href="tel:+8801749298058" class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i>01749298058</a>
+            <a href="mailto:club.robu@g.bracu.ac.bd" class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>club.robu@g.bracu.ac.bd</a>
+            <a href="web-dev-team" class="icon"><i class="fa fa-user" aria-hidden="true"></i>Dev team</a>
+        </div>
+    </section>
+
+    <section>
+        <div class = "credit">
+            <p>
+                ROBU Copyright &copy; 2024 Traction 2.0 || All Rights reserved || Developed by ROBU WEB DEv team || All rights reserved by ROBU WEB DEV Team
+            </p>
+        </div>
+        </Section>
+
+</body>
+</html>

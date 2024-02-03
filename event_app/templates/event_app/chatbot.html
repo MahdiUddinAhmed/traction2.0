@@ -1,0 +1,124 @@
+{% load static %}
+
+    <!DOCTYPE html>
+    <html>
+    
+    <head>
+        <title>Chatbot</title>
+        <link rel="stylesheet" href="{% static 'css/pj.css' %}">
+        <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+        <link rel="stylesheet" href="{% static 'css/topcomponent.css' %}">
+        <link rel="stylesheet" href="/chatbot.css"> <!-- Added the chatbot.css link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+    
+        <nav class="navbar">
+            <a href="{% url 'home' %}">
+                <div class="logo">
+                    <img src="{% static 'img/logo.png' %}" alt="ROBU Logo">
+                </div>
+            </a>
+    
+            <div class="nav-links">
+                <a href="#">About</a>
+                <a href="#">Segments</a>
+                <button class="button">Register</button>
+            </div>
+        </nav>
+    
+        
+        <div class="container">
+            <h1>
+                Register here
+            </h1>
+            <p>
+                Welcome to the future of web development – it's Prompt Engineering! Embrace the power of ChatGPT and AI to revolutionize website creation. Join us as we push the boundaries of efficiency and creativity in the digital realm. Let your imagination run wild because the future is now, and it's powered by AI!
+            </p>
+            <p> Registration fee is 900 ( 910 if through Bkash) if team of 3 or 1200 (1210 if through Bkash ) if team of 4.
+                Pay through any of the following:
+            </p>
+            <ul style="color: antiquewhite;">
+                <li>If Bkash</li>
+                <ul>
+                    <li>01857093392</li>
+                    <li>01631073242</li>
+                </ul  style="color: antiquewhite;">
+                <p>[add your team name in the reference]</p>
+                <p>Transaction Id:</p>
+                
+                <li>If Cash: (write their name in Transaction ID area )</li>
+                <ul>
+                    <li>Radia Tasnim Arony ( Executive of FnM) - 01857093392</li>
+                    <li>Nafisa Rahman (Executive of FnM) - 01631073242</li>
+                </ul>
+            </ul>
+            <!-- Clickable button linking to Google Drive -->
+            <p>
+                <a href="https://drive.google.com/drive/folders/1TYXLglRgt8_EM1VTyobIEDTIlZgBjNFd?usp=sharing" target="_blank">
+                    <button class="driveLink">Rulebook</button>
+                </a>
+            </p>
+
+            <style>
+                .form-group input {
+                    color: black;
+                }
+            </style>
+    
+            <form method="post">
+                {% csrf_token %}
+                
+                <div class="form-group">
+                    <label for="{{ form.teamName.id_for_label }}">Alias/Code Name:</label>
+                    {{ form.teamName }}
+                </div>
+            
+                <div class="form-group">
+                    <label for="{{ form.teamLeadName.id_for_label }}">Student Name:</label>
+                    {{ form.teamLeadName }}
+                </div>
+            
+                <div class="form-group">
+                    <label for="{{ form.teamLeadStudentID.id_for_label }}">Student ID:</label>
+                    {{ form.teamLeadStudentID }}
+                </div>
+            
+                <div class="form-group">
+                    <label for="{{ form.transactionID.id_for_label }}">Transaction ID:</label>
+                    {{ form.transactionID }}
+                </div>
+            
+                <div class="form-group">
+                    <label for="{{ form.team_Lead_Phone.id_for_label }}"> Phone:</label>
+                    {{ form.team_Lead_Phone }}
+                </div>
+            
+                <button type="submit">Submit</button>
+            </form>
+    
+            <a href="{% url 'home' %}">
+                <button class="goBack">Go back to home</button>
+            </a>
+        </div>
+        <section class="section section-dark">
+            <h2>Contact Us</h2>
+            <div class="contact-icons">
+                <a href="https://www.facebook.com/BRACU.Robotics.Club" target="_blank" class="icon">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook
+                </a>
+                <a href="tel:+8801749298058" class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i>01749298058</a>
+                <a href="mailto:club.robu@g.bracu.ac.bd" class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>club.robu@g.bracu.ac.bd</a>
+                <a href="web-dev-team" class="icon"><i class="fa fa-user" aria-hidden="true"></i>Dev team</a>
+            </div>
+        </section>
+        <section>
+        <div class = "credit">
+            <p>
+                ROBU Copyright &copy; 2024 Traction 2.0 || All Rights reserved || Developed by ROBU WEB DEv team || All rights reserved by ROBU WEB DEV Team
+            </p>
+        </div>
+        </Section>
+    </html>e;
+   

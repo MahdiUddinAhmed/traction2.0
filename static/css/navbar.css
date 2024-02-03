@@ -1,0 +1,84 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Style for the logo */
+/* Style for the logo */
+.logo img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for the navigation links */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    position: relative;
+}
+
+/* Add separator between links */
+.nav-links a:not(:last-child):after {
+    content: "|";
+    margin-left: 10px;
+    color: #888;
+}
+
+/* Add hover effect on the links */
+.nav-links a:hover {
+    color: #62ff00; /* Change color on hover */
+}
+
+.button {
+    background-color: #1c87c9;
+    border-radius: 60px;
+    border: none;
+    color: #eeeeee;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    animation: glowing 4000ms infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-color: #058da8;
+        box-shadow: 0 0 5px #0592a8;
+    }
+    50% {
+        background-color: #19e8e8;
+        box-shadow: 0 0 20px #19e8e5;
+    }
+    100% {
+        background-color: #0598a8;
+        box-shadow: 0 0 5px #05a8a8;
+    }
+}
+
+
+/* Add hover effect for the Register button */
+.button:hover {
+    background-color: rgb(136, 255, 1);
+    animation: None;
+}

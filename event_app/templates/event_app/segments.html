@@ -1,0 +1,113 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/segment.css' %}">
+    <link rel="stylesheet" href="{% static 'css/topcomponent.css' %}">
+    <link rel="stylesheet" href="{% static 'css/spage.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Segment</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="{% url 'home' %}">
+            <div class="logo">
+                <img src="{% static 'img/logo.png' %}" alt="ROBU Logo">
+            </div>
+        </a>
+
+        <div class="nav-links">
+            <a href="#">About</a>
+            <a href=" ">Segments</a>
+            <a href="  "><button class="button">Register</button></a>
+        </div>
+    </nav>
+    <div class="segment">
+        <div class="card">
+            <img src="{% static 'img/project.png' %}" alt="Segment 1" class="segment-image" width="20%" height="auto">
+            <div class="card-content">
+                <h2>Project Showcasing</h2>
+                <p>We're on a quest to ignite the spark of innovation! Dive into the world of "Project Showcasing" where creativity meets robotics. Unleash your ideas, fuel your passion, and stand a chance to elevate your creation to the grand stage of the upcoming ROBU project. Let's turn dreams into reality!.</p>
+                <div class="buttons">
+                    <a href="{% url 'robo-racing' %}">Register</a>
+                    <a href="https://drive.google.com/drive/folders/1TYXLglRgt8_EM1VTyobIEDTIlZgBjNFd?usp=sharing">Rulebook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="segment">
+        <div class="card">
+            <img src="{% static 'img/idea.png' %}" alt="Segment 1" class="segment-image" width="20%" height="auto">
+            <div class="card-content">
+                <h2>Idea Competition</h2>
+                <p>Think big, dream bigger! Join the Idea Competition and be the visionary the world needs. We're hunting for groundbreaking ideas that can reshape the future. Your brilliance could lead to a spot in the prestigious ROBU project. It's not just an idea; it's a revolution waiting to happen!</p>
+                <div class="buttons">
+                    <a href="{% url 'idea-gen' %}">Register</a>
+                    <a href="https://drive.google.com/drive/folders/1TYXLglRgt8_EM1VTyobIEDTIlZgBjNFd?usp=sharing">Rulebook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="segment">
+        <div class="card">
+            <img src="{% static 'img/AI.png' %}" alt="Segment 1" class="segment-image" width="20%" height="auto">
+            <div class="card-content">
+                <h2>Prompt Engineering</h2>
+                <p>Welcome to the future of web development – it's Prompt Engineering! Embrace the power of ChatGPT and AI to revolutionize website creation. Join us as we push the boundaries of efficiency and creativity in the digital realm. Let your imagination run wild because the future is now, and it's powered by AI!</p>
+                <div class="buttons">
+                    <a href="{% url 'chatbot' %}">Register</a>
+                    <a href="https://drive.google.com/drive/folders/1TYXLglRgt8_EM1VTyobIEDTIlZgBjNFd?usp=sharing">Rulebook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="segment">
+        <div class="card">
+            <img src="{% static 'img/soccer.png' %}" alt="Segment 1" class="segment-image" width="100%" height="auto">
+            <div class="card-content">
+                <h2>Robo Soccer</h2>
+                <p>Gear up for the ultimate fusion of technology and sportsmanship – Soccerbot! These pint-sized warriors are here for remote-controlled soccer showdowns. Design, program, and witness your bots showcase agility and strategic brilliance on a miniature field. It's not just a match; it's a battle of bots like never before! Are you ready to score big in the world of Soccerbot?</p>
+                <div class="buttons">
+                    <a href="{% url 'soccer' %}">Register</a>
+                    <a href="https://drive.google.com/drive/folders/1TYXLglRgt8_EM1VTyobIEDTIlZgBjNFd?usp=sharing">Rulebook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="segment">
+        <div class="card">
+            <img src="{% static 'img/lfr (3).png' %}" alt="Segment 1" class="segment-image" width="100%" height="auto">
+            <div class="card-content">
+                <h2>LFR Racer</h2>
+                <p>Rev up your engines and get ready for the thrill! The LFR Race is not just about robots; it's a high-speed showdown of innovation. Design, program, and watch your small wonders navigate the path with precision. It's more than a race; it's a journey into the future of robotics. Let the games begin!</p>
+                <div class="buttons">
+                    <a href="{% url 'line-follow' %}">Register</a>
+                    <a href="https://drive.google.com/drive/folders/1TYXLglRgt8_EM1VTyobIEDTIlZgBjNFd?usp=sharing">Rulebook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section section-dark">
+        <h2>Contact Us</h2>
+        <div class="contact-icons">
+            <a href="https://www.facebook.com/BRACU.Robotics.Club" target="_blank" class="icon">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook
+            </a>
+            <a href="tel:+8801749298058" class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i>01749298058</a>
+            <a href="mailto:club.robu@g.bracu.ac.bd" class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>club.robu@g.bracu.ac.bd</a>
+            <a href="web-dev-team" class="icon"><i class="fa fa-user" aria-hidden="true"></i>Dev team</a>
+        </div>
+    </section>
+    <section>
+    <div class = "credit">
+        <p>
+            ROBU Copyright &copy; 2024 Traction 2.0 || All Rights reserved || Developed by ROBU WEB DEv team || All rights reserved by ROBU WEB DEV Team
+        </p>
+    </div>
+    </Section>
+</body>
+</html>
