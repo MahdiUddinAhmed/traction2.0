@@ -20,13 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ifpu%mayaz+3p*w(ch8mg5nqjwh=qs&zu6$w8-dgp7_7q8r$yb'
+SECRET_KEY = 'yd63o3&cv#a^w!8kywc(&hwz_il-@+*i@hxfsqqr%flk3e--#@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['*', 'techspectra.amakash-home.xyz',]
 
 # Application definition
 
@@ -100,6 +99,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://techspectra.amakash-home.xyz', 'https://*.127.0.0.1']
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
