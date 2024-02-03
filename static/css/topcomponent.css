@@ -176,7 +176,7 @@ body, html {
 
   .ptext {
     position: absolute;
-    top: 70%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #000;
@@ -256,6 +256,9 @@ body, html {
 }
 img {
   width: 100%;
+}
+.ptext {
+  top: 60%;
 }
 }
 

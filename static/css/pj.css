@@ -10,7 +10,7 @@ ul, li {
     color: antiquewhite;
 }
 .container {
-    max-width: 600px;
+    max-width:80%;
     margin: 20px auto;
     padding: 20px;
     background-color: #333;
