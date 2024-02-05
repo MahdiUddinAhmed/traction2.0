@@ -73,7 +73,7 @@
         <form method="post">
             {% csrf_token %}
             <div class="form-group">
-                <label for="{{ form.team_Name.id_for_label }}">Team Name:</label>
+                <label for="{{ form.team_Name.id_for_label }}">Team Name: (TeamName _ROBU if ROBU Member)</label>
                 {{ form.team_Name }}
             </div>
 
